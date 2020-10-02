@@ -1,0 +1,37 @@
+
+/* LOADER  */
+
+.loading span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%; 
+  opacity: 0;
+  margin: 3px;
+}
+
+.loading span:nth-child(1){
+  animation: opacitychange 1s ease-in-out infinite;
+  background-color: #26c589;
+}
+
+.loading span:nth-child(2){
+  animation: opacitychange 1s ease-in-out 0.33s infinite;
+  background-color: #ffdc3e;
+}
+
+.loading span:nth-child(3){
+  animation: opacitychange 1s ease-in-out 0.66s infinite;
+  background-color: #db34c8;
+}
+
+@keyframes opacitychange{
+  0%, 100%{
+    opacity: 0;
+  }
+
+  60%{
+    opacity: 1;
+  }
+}
+/* LOADER  */
